@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Task 1a",
+      "setup": "",
+      "run": "python3 task1.py",
+      "input": "1.001",
+      "output": "That is within normal Earth orbit.",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 1b",
+      "setup": "",
+      "run": "python3 task1.py",
+      "input": "1.018",
+      "output": "1.018",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 2a",
+      "setup": "",
+      "run": "python3 task2.py",
+      "input": "729",
+      "output": "729[\\.\\d]* is both a perfect square and a perfect cube.",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 2b",
+      "setup": "",
+      "run": "python3 task2.py",
+      "input": "36",
+      "output": "36[\\.\\d]* is only a perfect square.",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 3a",
+      "setup": "",
+      "run": "python3 task3.py",
+      "input": "-2.01",
+      "output": "-2.01[\\r\\n\\d.]* is not .*integer",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 3b",
+      "setup": "",
+      "run": "python3 task3.py",
+      "input": "2.0",
+      "output": "2[\\.\\d]* is a.*integer",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 4a",
+      "setup": "",
+      "run": "python3 task4.py",
+      "input": "Christine",
+      "output": "Hi Christine! You are a VIP!",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Task 4b",
+      "setup": "",
+      "run": "python3 task4.py",
+      "input": "Gordon",
+      "output": "You are not a VIP",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Problem 1",
+      "setup": "",
+      "run": "python3 problem1.py",
+      "input": "36",
+      "output": "36[\\.\\d]* is frue",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Problem 1b",
+      "setup": "",
+      "run": "python3 problem1.py",
+      "input": "16",
+      "output": "16[\\.\\d]* is not frue",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
