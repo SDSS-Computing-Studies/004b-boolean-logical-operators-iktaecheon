@@ -26,3 +26,29 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+x = int(input("Enter an integer=>"))
+y = int(input("Enter an integer=>"))
+z = int(input("Enter an integer=>"))
+
+if z == x == y:
+    hyp = x
+    side1 = y
+    side2 = z
+    print("{},{},{} do not form a pythagoran triple".format(side1, side2, hyp))
+elif x > y and x > z:
+    hyp = x
+    side1 = y
+    side2 = z
+elif y > x and y > z:
+    hyp = y
+    side1 = x
+    side2 = z
+elif z > x and z > y:
+    hyp = z
+    side1 = x
+    side2 = y
+if hyp != side1:
+    if hyp**2 == (side1**2)+(side2**2):
+        print("{},{},{} form a Pythagorean triple".format(side1,side2,hyp))
+    else:
+        print("{},{},{} do not form a pythagoran triple".format(side1, side2, hyp))

@@ -28,3 +28,17 @@ Example:
 Enter a number: 8
 8 is only a perfect cube.
 """
+
+x = int(input("Enter a number: "))
+square = x**0.5
+cube = x**(1/3)
+
+square2 = round(square,8)%2
+cube2 = round(cube)%2
+
+if (square2 == 1 or square2 == 0) and (cube2 == 1 or cube2 == 0):
+    print(str(x) + " is both a perfect square and a perfect cube.")
+elif (square2 == 1 or square2 == 0) and (cube2 != 1 or cube2 != 0):
+    print(str(x) + " is only a perfect square.")
+elif (square2 != 1 or square2 == 0) and (cube2 != 1 or cube2 == 0):
+    print(str(x) + " is only a perfect cube.")
