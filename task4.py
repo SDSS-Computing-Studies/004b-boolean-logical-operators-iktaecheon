@@ -24,6 +24,6 @@ VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
 name = input("Enter your name=>")
 
 if name in VIPNames:
-    print("Hi! " + name + "! " + "You are a VIP!")
+    print("Hi " + name + "! " + "You are a VIP!")
 else:
     print("You are not a VIP.")
