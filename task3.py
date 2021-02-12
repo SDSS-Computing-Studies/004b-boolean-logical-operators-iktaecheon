@@ -15,12 +15,13 @@ example:
 Enter a number: -3
 -3 is not a positive integer
 """
-x = input("Enter a number: ")
-dot = "."
-negative = "-"
-if dot in x:
-    print(x + " is not a positive integer")
-elif negative in x:
-    print(x + " is not a positive integer")
+x = float(input("Enter a number: "))
+y = int(x)
+
+
+if x - y != 0:
+    print(str(x) + " is not a positive integer")
+elif x < 0:
+    print(str(x) + " is not a positive integer")
 else:
-    print(x + " is a positive integer.")
+    print(str(x) + " is a positive integer.")
